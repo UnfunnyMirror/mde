@@ -10,6 +10,16 @@
     "version": "0.1.0"
   },
   "tauri": {
+    "cli": {
+        "description": "",
+        "args": [
+            {
+                "name": "path",
+                "index": 1,
+                "takesValue": true
+            }
+        ]
+    },
     "allowlist": {
       "all": false,
       "shell": {
