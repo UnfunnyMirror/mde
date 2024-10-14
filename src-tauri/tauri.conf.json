@@ -3,7 +3,8 @@
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist"
+    "distDir": "../dist",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "mde",
@@ -22,6 +23,14 @@
     },
     "allowlist": {
       "all": false,
+      "dialog": {
+          "all": true,
+          "ask": true,
+          "confirm": true,
+          "message": true,
+          "open": true,
+          "save": true
+      },
       "shell": {
         "all": false,
         "open": true
